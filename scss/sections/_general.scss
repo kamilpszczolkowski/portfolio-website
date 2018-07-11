@@ -1,3 +1,12 @@
+@mixin clearfix {
+  &:after,
+  &:before {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +15,16 @@
 
 body {
   background-color: rgb(59,74,88);
+  color: #efefef;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
