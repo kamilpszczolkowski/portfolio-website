@@ -8,8 +8,6 @@ export default class MainSite extends Component {
             <Template activeSite="home">
                 <div className='container'>
                     <h2>Jestem główną stroną</h2>
-                    <h2>Jestem</h2>
-                    <h2>Test</h2>
                 </div>
             </Template>
         )

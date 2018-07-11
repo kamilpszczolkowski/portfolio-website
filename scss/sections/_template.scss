@@ -1,11 +1,13 @@
 header {
   @include clearfix;
+  border-bottom: 1px solid rgba(62,62,62,0.7);
+  box-shadow: 0px 3px 48px -5px rgba(62,62,62,0.9);
 
   nav {
     ul {
       list-style-type: none;
       overflow: auto;
-      margin: 20px 0;
+      margin: 10px 0;
 
       li {
         float: left;
@@ -13,12 +15,12 @@ header {
         margin-right: 20px;
 
         &.active {
-          color: lightblue;
+          color: lawngreen;
         }
       }
 
       li:hover {
-        color: green;
+        color: lightblue;
       }
     }
   }
@@ -30,8 +32,7 @@ main {
 
 footer {
   @include clearfix;
-  background-color: red;
-  height: 70px;
+  border-top: 1px solid black;
 
   &.attached{
     position:absolute;
