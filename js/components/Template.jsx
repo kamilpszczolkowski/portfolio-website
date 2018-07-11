@@ -11,13 +11,13 @@ export default class Template extends Component {
         }
     }
 
-    checkIfFooterAttached() {  //Chceck if the site is longer than viewport - if not, footer is attached to the end of the page
+    checkIfFooterAttached = () => {  //Chceck if the site is longer than viewport - if not, footer is attached to the end of the page
         let headerElement = document.getElementsByTagName('header')[0];
         let mainElement = document.getElementsByTagName('main')[0];
         let footer = document.getElementsByTagName('footer')[0];
         let allHeight = headerElement.offsetHeight + mainElement.offsetHeight + footer.offsetHeight;
         return allHeight <= window.innerHeight;
-    }
+    };
 
     componentDidMount() {
         this.setState({

@@ -7,13 +7,19 @@ export default class Footer extends Component {
                 <div className='container'>
                     <div className='footer-left'>
                         <span>Kamil Pszczółkowski - portfolio</span>
-                        <br />
+                        <br/>
                         <span>Front-End developper</span>
                     </div>
                     <div className='footer-right'>
-                        <div className='linked-in'></div>
-                        <div className='gmail'></div>
-                        <div className='github'></div>
+                        <a href='https://www.linkedin.com/in/kamil-pszcz%C3%B3%C5%82kowski-9b9894166/'>
+                            <div className='linked-in'></div>
+                        </a>
+                        <a href="mailto:pszczolkowski.kamil@gmail.com">
+                            <div className='gmail'></div>
+                        </a>
+                        <a href="https://github.com/kamilpszczolkowski">
+                            <div className='github'></div>
+                        </a>
                     </div>
                 </div>
             </footer>
