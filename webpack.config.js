@@ -32,18 +32,14 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
-                   //  MiniCSS.loader,
-                    'style-loader',
+                     MiniCSS.loader,
+                  //  'style-loader',
                     'css-loader',
                     {
                         loader: 'postcss-loader',
                         options: {
-                            plugins: () => [
-                                new require('autoprefixer')({
-                                    browsers: [
-                                        'ie 11'
-                                    ]
-                                })
+                            plugins: [
+                                require('autoprefixer')
                             ]
                         }
                     },
