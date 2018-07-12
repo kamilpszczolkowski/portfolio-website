@@ -33,14 +33,29 @@
 
 .skills {
   height: 600px;
+
+  h2 {
+    margin-top: 35px;
+  }
+
+  #skillsDesc {
+    margin: 10px 0;
+  }
+
   .skillsItems {
     overflow: auto;
+    width: 500px;
+    margin: 40px auto;
 
     img {
       float: left;
       margin: 5px;
       width: 120px;
       height: 120px;
+    }
+
+    img:last-child {
+      margin-left: 140px;
     }
   }
 }

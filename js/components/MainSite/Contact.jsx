@@ -5,6 +5,7 @@ export default class Contact extends Component {
         return (
             <section className='contact'>
                 <h2>CONTACT</h2>
+                <p>Contact information</p>
             </section>
         )
     }
