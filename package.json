@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "google-maps-react": "^2.0.2",
+    "npm": "^6.1.0",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
     "react-router-dom": "^4.3.1",

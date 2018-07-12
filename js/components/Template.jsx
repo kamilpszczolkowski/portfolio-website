@@ -36,7 +36,7 @@ export default class Template extends Component {
     render() {
         return (
             <div>
-                <Header activeSite={this.props.activeSite}/>
+                <Header activeSite={this.props.activeSite}  scrollFunc={this.props.scrollFunc}/>
                 <main>
                     {this.props.children}
                 </main>

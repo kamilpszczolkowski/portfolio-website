@@ -4,19 +4,11 @@ import {Route, Link} from 'react-router-dom';
 export default class Header extends Component {
 
     skillsCLick = () => {
-        window.scrollTo({
-            "behavior": "smooth",
-            "left": 0,
-            "top": 680
-        })
+        this.props.scrollFunc(680);
     };
 
     contactClick = () => {
-        window.scrollTo({
-            "behavior": "smooth",
-            "left": 0,
-            "top": 1200
-        })
+        this.props.scrollFunc(1300);
     };
 
     render() {

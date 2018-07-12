@@ -10,14 +10,31 @@ import ProjectSpecific from './components/ProjectSpecific.jsx';
 import styles from '../scss/style.scss';
 
 class App extends Component {
+
+    mainSiteScroll = whereToScroll => {
+        this.lateScroll = setTimeout(() => {
+            window.scrollTo({
+                "behavior": "smooth",
+                "left": 0,
+                "top": whereToScroll
+            })
+        }, 300);
+    };
+
+    componentWillUnmount() {
+        clearTimeout(this.lateScroll)
+    }
+
     render() {
         return (
             <HashRouter>
                 <div>
-                    <Route exact path='/' component={MainSite}/>
-                    <Route exact path='/projects' component={Projects}/>
-                    <Route path='/projects/:id' component={ProjectSpecific}/>
-                    <Route path='/graphics' component={Graphics}/>
+                    <Route exact path='/' render={(props) => <MainSite {...props} func={this.mainSiteScroll}/>}/>
+                    <Route exact path='/projects'
+                           render={(props) => <Projects {...props} func={this.mainSiteScroll}/>}/>
+                    <Route path='/projects/:id'
+                           render={(props) => <ProjectSpecific {...props} func={this.mainSiteScroll}/>}/>
+                    <Route path='/graphics' render={(props) => <Graphics {...props} func={this.mainSiteScroll}/>}/>
                 </div>
             </HashRouter>
         )

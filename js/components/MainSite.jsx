@@ -6,9 +6,10 @@ import Contact from './MainSite/Contact.jsx';
 import Skills from './MainSite/Skills.jsx';
 
 export default class MainSite extends Component {
+
     render() {
         return (
-            <Template activeSite="home">
+            <Template activeSite="home" scrollFunc={this.props.func}>
                 <div className='background'></div>
                 <div className='container'>
                     <Home/>
