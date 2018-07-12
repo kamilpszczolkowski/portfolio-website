@@ -19,7 +19,7 @@ a {
 
 header {
   border-bottom: 1px solid rgba(62, 62, 62, 0.7);
-  box-shadow: 0px 3px 48px -5px rgba(62, 62, 62, 0.9); }
+  background-color: rgba(59, 74, 88, 0.45); }
   header:after, header:before {
     content: "";
     clear: both;
@@ -74,6 +74,51 @@ footer {
       background-image: url("https://www.shareicon.net/download/2017/03/07/880593_media.ico");
       background-size: 30px 30px; }
 
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 679px;
+  background-image: url(images/main.jpg);
+  background-size: cover;
+  z-index: -1;
+  border-bottom: 1px solid rgba(62, 62, 62, 0.7);
+  box-shadow: 0px 3px 48px -5px rgba(62, 62, 62, 0.9); }
+
 .home {
-  height: 800px; }
+  height: 600px;
+  position: relative; }
+  .home h2 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 2.5rem;
+    width: 600px; }
+    .home h2 span {
+      position: absolute;
+      top: 105%;
+      left: 40%;
+      font-size: 1.5rem; }
+
+.skills {
+  height: 600px; }
+  .skills h2 {
+    margin-top: 35px; }
+  .skills #skillsDesc {
+    margin: 10px 0; }
+  .skills .skillsItems {
+    overflow: auto;
+    width: 500px;
+    margin: 40px auto; }
+    .skills .skillsItems img {
+      float: left;
+      margin: 5px;
+      width: 120px;
+      height: 120px; }
+    .skills .skillsItems img:last-child {
+      margin-left: 140px; }
+
+.contact {
+  height: 600px; }
 
