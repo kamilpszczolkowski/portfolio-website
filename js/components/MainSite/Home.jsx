@@ -5,7 +5,7 @@ export default class Home extends Component {
         return (
             <section className='home'>
                 <h2>KAMIL PSZCZÓŁKOWSKI
-                    <span>FRONT-END DEVELOPPER</span>
+                    <span>FRONT-END DEVELOPER</span>
                 </h2>
 
             </section>

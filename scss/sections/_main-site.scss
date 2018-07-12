@@ -30,3 +30,21 @@
     }
   }
 }
+
+.skills {
+  height: 600px;
+  .skillsItems {
+    overflow: auto;
+
+    img {
+      float: left;
+      margin: 5px;
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+
+.contact {
+  height: 600px;
+}
