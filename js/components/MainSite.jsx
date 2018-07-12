@@ -9,6 +9,7 @@ export default class MainSite extends Component {
     render() {
         return (
             <Template activeSite="home">
+                <div className='background'></div>
                 <div className='container'>
                     <Home/>
                     <Skills/>
