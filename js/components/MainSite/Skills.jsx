@@ -20,7 +20,7 @@ export default class Skills extends Component {
             <section className='skills'>
                 <h2>SKILLS</h2>
                 <p id='skillsDesc'>
-                    I’m constantly developing my skills as front-end designer. Below I listed technologies which I use
+                    I’m constantly developing my skills as front-end designer. Below you can see technologies which I use
                     frequently.
                 </p>
                 <article className='skillsItems'>
