@@ -32,7 +32,6 @@
 }
 
 .skills {
-  height: 600px;
 
   h2 {
     margin-top: 35px;
@@ -58,12 +57,32 @@
       height: 120px;
 
       &:hover {
-        box-shadow: 0px 0px 10px 3px rgba(0,150,0,0.40);
+        box-shadow: 0px 0px 10px 3px rgba(0,150,0,0.80);
       }
     }
 
     img:last-child {
       margin-left: 140px;
+    }
+  }
+
+  #specificSkill {
+    width: 500px;
+    height: 90px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(53, 118, 183, 0.5);
+    position: relative;
+
+    span {
+      position: absolute;
+      top: -28px;
+      left: 10px;
+      font-size: 25px;
     }
   }
 }
