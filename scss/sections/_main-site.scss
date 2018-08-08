@@ -12,6 +12,22 @@
   box-shadow: 0px 3px 48px -5px rgba(62, 62, 62, 0.9);
 }
 
+.main_section_title {
+  margin: 35px 70px;
+  position: relative;
+
+  &::after {
+    display: block;
+    position: absolute;
+    left: -70px;
+    content: '';
+    width: 70%;
+    height: 2px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgb(59,74,88)), to(rgb(59,74,88)), color-stop(30%, lawngreen));
+  }
+}
+
 .home {
   height: 600px;
   position: relative;
@@ -58,7 +74,7 @@
       height: 120px;
 
       &:hover {
-        box-shadow: 0px 0px 10px 3px rgba(0,150,0,0.80);
+        box-shadow: 0px 0px 7px 1px lawngreen;
       }
     }
 
@@ -89,6 +105,12 @@
   }
 }
 
+.experience {
+  height: 600px;
+
+}
+
 .contact {
   height: 600px;
 }
+
