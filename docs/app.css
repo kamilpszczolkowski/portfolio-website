@@ -19,7 +19,7 @@ a {
 
 header {
   border-bottom: 1px solid rgba(62, 62, 62, 0.7);
-  background-color: rgba(59, 74, 88, 0.45); }
+  background-color: rgba(59, 74, 88, 0.75); }
   header:after, header:before {
     content: "";
     clear: both;
@@ -82,6 +82,7 @@ footer {
   height: 679px;
   background-image: url(images/main.jpg);
   background-size: cover;
+  background-position: center;
   z-index: -1;
   border-bottom: 1px solid rgba(62, 62, 62, 0.7);
   box-shadow: 0px 3px 48px -5px rgba(62, 62, 62, 0.9); }
@@ -101,23 +102,47 @@ footer {
       left: 40%;
       font-size: 1.5rem; }
 
-.skills {
-  height: 600px; }
-  .skills h2 {
-    margin-top: 35px; }
-  .skills #skillsDesc {
-    margin: 10px 0; }
-  .skills .skillsItems {
-    overflow: auto;
-    width: 500px;
-    margin: 40px auto; }
-    .skills .skillsItems img {
-      float: left;
-      margin: 5px;
-      width: 120px;
-      height: 120px; }
-    .skills .skillsItems img:last-child {
-      margin-left: 140px; }
+.skills h2 {
+  margin-top: 35px; }
+
+.skills #skillsDesc {
+  width: 500px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px; }
+
+.skills .skillsItems {
+  overflow: auto;
+  width: 410px;
+  margin: 40px auto; }
+  .skills .skillsItems img {
+    float: left;
+    margin: 5px;
+    width: 120px;
+    height: 120px; }
+    .skills .skillsItems img:hover {
+      box-shadow: 0px 0px 10px 3px rgba(0, 150, 0, 0.8); }
+  .skills .skillsItems img:last-child {
+    margin-left: 140px; }
+
+.skills #specificSkill {
+  width: 500px;
+  height: 90px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(53, 118, 183, 0.5);
+  position: relative;
+  padding: 10px; }
+  .skills #specificSkill span {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    font-size: 25px; }
 
 .contact {
   height: 600px; }
