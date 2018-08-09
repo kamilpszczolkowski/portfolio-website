@@ -24,7 +24,7 @@
     width: 70%;
     height: 2px;
     background: black;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgb(59,74,88)), to(rgb(59,74,88)), color-stop(30%, lawngreen));
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgb(59, 74, 88)), to(rgb(59, 74, 88)), color-stop(30%, lawngreen));
   }
 }
 
@@ -105,9 +105,113 @@
   }
 }
 
-.experience {
-  height: 600px;
+#education_tree {
+  display: block;
+  width: 100%;
+  height: 700px;
+  position: relative;
 
+  .vertical_line {
+    width: 2px;
+    height: 500px;
+    background: lawngreen;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .education_dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: lawngreen;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &.dot_education {
+      top: 590px;
+    }
+
+    &.dot_internship {
+      top: 420px;
+    }
+
+    &.dot_work {
+      top: 310px;
+    }
+
+    &.dot_course {
+      top: 120px;
+    }
+  }
+
+  .education_date {
+    position: absolute;
+    left: 50%;
+
+    &.dot_education {
+      top: 571px;
+      transform: translateX(10px);
+    }
+
+    &.dot_internship {
+      top: 400px;
+      transform: translateX(-125px);
+    }
+
+    &.dot_work {
+      top: 290px;
+      transform: translateX(10px);
+    }
+
+    &.dot_course {
+      top: 102px;
+      transform: translateX(-125px);
+    }
+  }
+
+  .education_desc {
+    position: absolute;
+    left: 50%;
+    max-width: 40%;
+    text-align: center;
+
+    span {
+      display: block;
+      font-size: 18px;
+    }
+
+    .education_place {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .education_details {
+      font-style: italic;
+    }
+
+    &.dot_education {
+      top: 589px;
+      transform: translateX(40px);
+    }
+
+    &.dot_internship {
+      top: 420px;
+      left: 75px;
+    }
+
+    &.dot_work {
+      top: 310px;
+      transform: translateX(30px);
+    }
+
+    &.dot_course {
+      top: 117px;
+      left: 75px;;
+    }
+  }
 }
 
 .contact {
