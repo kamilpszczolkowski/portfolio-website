@@ -9,6 +9,7 @@ export default class EducationTree extends Component {
                 <div className="education_dot dot_internship"></div>
                 <div className="education_dot dot_work"></div>
                 <div className="education_dot dot_course"></div>
+                <div className="education_triangle"></div>
                 <span className="education_date dot_education">2010.11 / 2015.11</span>
                 <span className="education_date dot_internship">2016.02 - 2016.05</span>
                 <span className="education_date dot_work">2016.05 - 2018.05</span>

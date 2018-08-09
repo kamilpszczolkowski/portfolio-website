@@ -21,7 +21,7 @@ export default class Skills extends Component {
         return (
             <section className='skills'>
                 <h2 className="main_section_title">SKILLS</h2>
-                <p id='skillsDesc'>
+                <p className='moduleDesc'>
                     I’m constantly developing my skills as front-end designer. Below you can see technologies which I use
                     frequently.
                 </p>
