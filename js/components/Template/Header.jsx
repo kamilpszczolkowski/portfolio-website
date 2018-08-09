@@ -24,7 +24,7 @@ export default class Header extends Component {
                                 <Link to='/' onClick={this.skillsCLick}>SKILLS</Link>
                             </li>
                             <li>
-                                <Link to='/' onClick={this.contactClick}>CONTACT</Link>
+                                <Link to='/' onClick={this.contactClick}>EDUCATION</Link>
                             </li>
                             <li className={this.props.activeSite === 'projects' ? 'active' : ''}>
                                 <Link to='/projects'>PROJECTS</Link>

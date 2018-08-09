@@ -1,0 +1,46 @@
+.project_data {
+  @include clearfix;
+  width: 100%;
+
+  .project_description {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    border: 1px solid red;
+  }
+  .project_buttons  {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid red;
+  }
+
+  .project_technologies {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .project_buttons {
+    .project_direct_link {
+      background-image: url("../images/main.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 120px;
+      position: relative;
+
+      span {
+        font-size: 18px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate( -50%, -50% );
+        text-align: center;
+        background: rgba( 0,0,0, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
