@@ -12,11 +12,16 @@ export default class SingleProject extends Component {
                         <p>{this.props.technologies}</p>
                     </div>
                     <div className='project_buttons'>
-                        <a href={this.props.projectLink}>
-                            <div className="project_direct_link">
-                               <span>Click to open the project</span>
+                        <a href={this.props.projectLink} target='_blank'>
+                            <div className="projectButtons">
+                                Open project
                             </div>
-                    </a>
+                        </a>
+                        <a href={this.props.gitHubLink} target='_blank'>
+                            <div className="projectButtons">
+                                Source code - GitHub
+                            </div>
+                        </a>
                     </div>
                 </section>
             </article>

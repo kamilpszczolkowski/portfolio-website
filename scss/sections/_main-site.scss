@@ -216,39 +216,21 @@
   overflow: auto;
 }
 
+
 .downloadButton {
-  background: rgba(53, 118, 183, 0.5);
-  padding: 7px;
-  text-align: center;
-  font-size: 23px;
+  @include buttonBlueGreen();
   width: 47%;
   height: 40px;
-  border-radius: 5px;
   float: left;
   margin: 0 2px;
 
-  &:hover {
-    background-color: lawngreen;
-    color: rgb(59, 74, 88);
-    cursor: pointer;
-  }
 }
 
 .downloadButtonBig {
-  background: rgba(53, 118, 183, 0.5);
-  padding: 7px;
-  text-align: center;
-  font-size: 23px;
+  @include buttonBlueGreen();
   width: 250px;
   height: 40px;
-  border-radius: 5px;
   margin: 0 auto 80px auto;
-
-  &:hover {
-    background-color: lawngreen;
-    color: rgb(59, 74, 88);
-    cursor: pointer;
-  }
 }
 
 

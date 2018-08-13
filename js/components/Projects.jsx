@@ -11,7 +11,8 @@ export default class Projects extends Component {
                     <SingleProject
                         title="Testowy projekt"
                         technologies='HTML, CSS, JavaScript'
-                        projectLink='https://www.google.pl/'
+                        projectLink='https://kamilpszczolkowski.github.io/events_manager/#/'
+                        gitHubLink='https://github.com/kamilpszczolkowski/events_manager'
                     >
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci
                         alias beatae cumque earum eveniet explicabo inventore ipsum itaque mollitia

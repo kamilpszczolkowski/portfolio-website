@@ -45,3 +45,17 @@ a {
     background: -webkit-gradient(linear, 0 0, 100% 0, from(rgb(59, 74, 88)), to(rgb(59, 74, 88)), color-stop(30%, lawngreen));
   }
 }
+
+@mixin buttonBlueGreen {
+  background: rgba(53, 118, 183, 0.5);
+  padding: 7px;
+  text-align: center;
+  font-size: 23px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: lawngreen;
+    color: rgb(59, 74, 88);
+    cursor: pointer;
+  }
+}
