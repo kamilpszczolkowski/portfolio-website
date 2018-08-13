@@ -13,6 +13,9 @@ export default class Projects extends Component {
                         technologies='HTML, CSS, JavaScript'
                         projectLink='https://kamilpszczolkowski.github.io/events_manager/#/'
                         gitHubLink='https://github.com/kamilpszczolkowski/events_manager'
+                        picture1='../../images/projects/1/page1.png'
+                        picture2='../../images/projects/1/page2.png'
+                        picture3='../../images/projects/1/page3.png'
                     >
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci
                         alias beatae cumque earum eveniet explicabo inventore ipsum itaque mollitia
