@@ -29,6 +29,7 @@
   }
 
   .project_photos{
+    width: 100%;
     clear: both;
     float: left;
     margin: 20px 0;
@@ -37,6 +38,7 @@
 
     img {
       width: 500px;
+      margin: 0 2px;
     }
   }
 }

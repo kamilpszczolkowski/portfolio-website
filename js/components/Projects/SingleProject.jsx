@@ -9,9 +9,11 @@ export default class SingleProject extends Component {
     }
 
     showPic = pictureUrl => {
-        this.setState({
-            picturePath: pictureUrl
-        })
+        if (!this.props.dontClickOnPic) {
+            this.setState({
+                picturePath: pictureUrl
+            })
+        }
     };
 
     hidepic = () => {
@@ -39,7 +41,7 @@ export default class SingleProject extends Component {
             projectLink,
             picture1,
             picture2,
-            picture3
+            picture3,
         } = this.props;
 
         return (
