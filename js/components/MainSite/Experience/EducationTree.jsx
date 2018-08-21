@@ -1,10 +1,32 @@
 import React, {Component} from 'react';
 
 export default class EducationTree extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            showTree: false
+        }
+    }
+
+    componentDidMount(){
+        let self = this;
+        window.addEventListener("scroll", function(){
+            let doc = document.documentElement;
+            let top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+            let skillsSectionPos = document.getElementById("education_tree").offsetTop;
+            if(skillsSectionPos - (top + window.innerHeight/3) < 100 ){
+                console.log('działam');
+                self.setState({
+                    showTree: true
+                });
+            }
+        });
+    }
+
     render() {
         return (
             <article id="education_tree">
-                <div className="vertical_line"></div>
+                <div className={this.state.showTree? "vertical_line show" : "vertical_line"}></div>
                 <div className="education_dot dot_education"></div>
                 <div className="education_dot dot_internship"></div>
                 <div className="education_dot dot_work"></div>

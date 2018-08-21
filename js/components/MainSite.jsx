@@ -7,7 +7,6 @@ import Skills from './MainSite/Skills.jsx';
 import Experience from './MainSite/Experience.jsx';
 
 export default class MainSite extends Component {
-
     render() {
         return (
             <Template activeSite="home" scrollFunc={this.props.func}>
