@@ -97,17 +97,16 @@
 
   .vertical_line {
     width: 2px;
-    height: 500px;
+    height: 0;
     background: lawngreen;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: 2s;
-    opacity: 0;
+    transition: 1s;
 
     &.show {
-      opacity: 1;
+      height: 500px;
     }
   }
 
@@ -120,7 +119,12 @@
     position: absolute;
     left: 50%;
     transform: translateX( -50% );
-    top: 94px;
+    transition: 1s;
+    top: 350px;
+
+    &.show {
+      top: 94px;
+    }
   }
 
   .education_dot {
@@ -131,6 +135,12 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+
+    &.show {
+      opacity: 1;
+    }
 
     &.dot_education {
       top: 590px;
@@ -152,6 +162,12 @@
   .education_date {
     position: absolute;
     left: 50%;
+    opacity: 0;
+    transition: 0.5s;
+
+    &.show {
+      opacity: 1;
+    }
 
     &.dot_education {
       top: 571px;
@@ -179,6 +195,12 @@
     left: 50%;
     max-width: 40%;
     text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+
+    &.show {
+      opacity: 1;
+    }
 
     span {
       display: block;
