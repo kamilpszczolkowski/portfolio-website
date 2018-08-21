@@ -17,6 +17,23 @@ a {
   color: inherit;
   text-decoration: inherit; }
 
+.main_section_title {
+  margin: 35px 70px;
+  position: relative; }
+  .main_section_title::after {
+    display: block;
+    position: absolute;
+    left: -70px;
+    content: '';
+    width: 70%;
+    height: 2px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#3b4a58), to(#3b4a58), color-stop(30%, lawngreen)); }
+
+p {
+  margin: 10px 0;
+  line-height: 20px; }
+
 header {
   border-bottom: 1px solid rgba(62, 62, 62, 0.7);
   background-color: rgba(59, 74, 88, 0.75); }
@@ -102,15 +119,15 @@ footer {
       left: 40%;
       font-size: 1.5rem; }
 
-.skills h2 {
-  margin-top: 35px; }
-
-.skills #skillsDesc {
+.moduleDesc {
   width: 500px;
   margin: 20px auto;
   text-align: center;
   font-size: 20px;
   line-height: 30px; }
+
+.skills h2 {
+  margin-top: 35px; }
 
 .skills .skillsItems {
   overflow: auto;
@@ -122,14 +139,14 @@ footer {
     width: 120px;
     height: 120px; }
     .skills .skillsItems img:hover {
-      box-shadow: 0px 0px 10px 3px rgba(0, 150, 0, 0.8); }
+      box-shadow: 0px 0px 7px 1px lawngreen; }
   .skills .skillsItems img:last-child {
     margin-left: 140px; }
 
 .skills #specificSkill {
   width: 500px;
   height: 90px;
-  margin: 20px auto;
+  margin: 20px auto 80px auto;
   text-align: center;
   font-size: 20px;
   line-height: 30px;
@@ -144,6 +161,208 @@ footer {
     left: 10px;
     font-size: 25px; }
 
+#education_tree {
+  display: block;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  margin: -40px 0 50px 0; }
+  #education_tree .vertical_line {
+    width: 2px;
+    height: 0;
+    background: lawngreen;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    transition: 1s; }
+    #education_tree .vertical_line.show {
+      height: 500px; }
+  #education_tree .education_triangle {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid lawngreen;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    transition: 1s;
+    top: 350px; }
+    #education_tree .education_triangle.show {
+      top: 94px; }
+  #education_tree .education_dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: lawngreen;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s; }
+    #education_tree .education_dot.show {
+      opacity: 1; }
+    #education_tree .education_dot.dot_education {
+      top: 590px; }
+    #education_tree .education_dot.dot_internship {
+      top: 420px; }
+    #education_tree .education_dot.dot_work {
+      top: 310px; }
+    #education_tree .education_dot.dot_course {
+      top: 120px; }
+  #education_tree .education_date {
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    transition: 0.5s; }
+    #education_tree .education_date.show {
+      opacity: 1; }
+    #education_tree .education_date.dot_education {
+      top: 571px;
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px); }
+    #education_tree .education_date.dot_internship {
+      top: 400px;
+      -webkit-transform: translateX(-125px);
+              transform: translateX(-125px); }
+    #education_tree .education_date.dot_work {
+      top: 290px;
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px); }
+    #education_tree .education_date.dot_course {
+      top: 102px;
+      -webkit-transform: translateX(-125px);
+              transform: translateX(-125px); }
+  #education_tree .education_desc {
+    position: absolute;
+    left: 50%;
+    max-width: 40%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s; }
+    #education_tree .education_desc.show {
+      opacity: 1; }
+    #education_tree .education_desc span {
+      display: block;
+      font-size: 18px; }
+    #education_tree .education_desc .education_place {
+      font-weight: bold;
+      font-size: 20px; }
+    #education_tree .education_desc .education_details {
+      font-style: italic; }
+    #education_tree .education_desc.dot_education {
+      top: 589px;
+      -webkit-transform: translateX(40px);
+              transform: translateX(40px); }
+    #education_tree .education_desc.dot_internship {
+      top: 420px;
+      left: 75px; }
+    #education_tree .education_desc.dot_work {
+      top: 310px;
+      -webkit-transform: translateX(30px);
+              transform: translateX(30px); }
+    #education_tree .education_desc.dot_course {
+      top: 117px;
+      left: 75px; }
+
+.buttonsCV {
+  width: 400px;
+  margin: 0 auto;
+  overflow: auto; }
+
+.downloadButton {
+  background: rgba(53, 118, 183, 0.5);
+  padding: 7px;
+  text-align: center;
+  font-size: 23px;
+  border-radius: 5px;
+  width: 47%;
+  height: 40px;
+  float: left;
+  margin: 0 2px; }
+  .downloadButton:hover {
+    background-color: lawngreen;
+    color: #3b4a58;
+    cursor: pointer; }
+
+.downloadButtonBig {
+  background: rgba(53, 118, 183, 0.5);
+  padding: 7px;
+  text-align: center;
+  font-size: 23px;
+  border-radius: 5px;
+  width: 250px;
+  height: 40px;
+  margin: 0 auto 80px auto; }
+  .downloadButtonBig:hover {
+    background-color: lawngreen;
+    color: #3b4a58;
+    cursor: pointer; }
+
 .contact {
   height: 600px; }
+
+.project_data {
+  width: 100%; }
+  .project_data:after, .project_data:before {
+    content: "";
+    clear: both;
+    display: table; }
+  .project_data .project_description {
+    float: left;
+    width: 70%;
+    padding: 10px; }
+  .project_data .project_buttons {
+    float: left;
+    width: 30%;
+    padding: 10px; }
+  .project_data .project_technologies {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold; }
+  .project_data .project_buttons .projectButtons {
+    background: rgba(53, 118, 183, 0.5);
+    padding: 7px;
+    text-align: center;
+    font-size: 23px;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    margin: 10px auto; }
+    .project_data .project_buttons .projectButtons:hover {
+      background-color: lawngreen;
+      color: #3b4a58;
+      cursor: pointer; }
+  .project_data .project_photos {
+    width: 100%;
+    clear: both;
+    float: left;
+    margin: 20px 0;
+    text-align: center; }
+    .project_data .project_photos img {
+      width: 500px;
+      margin: 0 2px; }
+
+.pictureGallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10; }
+  .pictureGallery img {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
+.projectList {
+  margin-left: 20px; }
 
